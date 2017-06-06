@@ -2,22 +2,175 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/gabriel/Documentos/programação_de_aplicativos/Financeiro/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/e8251caeffa1a2aeea25b12b375b0538627a9fee/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
-        <dex dex="/home/gabriel/Documentos/programação_de_aplicativos/Financeiro/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6365a7f723ef7edc789d397a96880bfa79791cda/classes.dex" />
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_b33927746893277eb4853a8ef10e7b8b35b614d8.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/gabriel/Documentos/programação_de_aplicativos/Financeiro/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/0c04e8ac6e69bea207567b1d27837691cd38b415/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="ce7e0f42eab9b716caf46b8ec5a36d8aa3b2b733">
-        <dex dex="/home/gabriel/Documentos/programação_de_aplicativos/Financeiro/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4fed7dff497a564c62353a60b9f5f2685fdf16f0/classes.dex" />
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_56f73fe18f826f33a9355fc2ca8607433c9e2a13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/8881179bf976c7e799bb41bafc64ddcdf09b8a9f/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_92ec862fdc9afe576488593e3b9dfd9116ad8f15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/efabc3e3895ff3c08db918500e2bb332c279ecbe/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_a18adee8c50c663c4bb156f29ef598eb4251a976.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/8881179bf976c7e799bb41bafc64ddcdf09b8a9f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_9b58b95960e9a3d489317308ca9b10fcffa06592.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/49cb85d40f543b3613bb82001b6a06f3c3bba2ab/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_82e411786410eccb55f41b0de5e7023aa04d6f3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/04bfe3f1a76525123d1d790c4f47f6583f3272c1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_5dc46d40f9dba3b801650457bb55f32f7bfdc5d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/f2ac50f259055ab1d1da1ffd935a3cec6606202c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_b90f15db9c8e4c2e6c0d33e9df76742e220688cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_be6364d6ffd07f6db23fc134d043151a8a53855a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/0a3b303fa15883ad5a6e901808dbdab76a9029de/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_76b572ede761fa73b7aa8251399a56324749c090.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/94433312eca1be579751c70a9734e458c8e12d3f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_d8b3df10ce87c51d59359d43fec902d47ede5ba7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/a18df4b9656adb27904665ec543a391e3f26c4ca/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_f7e79fe69e56232e10fc68c9dc440039f7fc8d61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/9a1f36f751cea1dd6cde86103eff48259f1c8e12/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_17b72e9262738ce5b60e6c5f7506ce718cab0661.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/94433312eca1be579751c70a9734e458c8e12d3f/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_8caae48c266a3fb6bbd2cbb2a0683334d7c7027a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/f2ac50f259055ab1d1da1ffd935a3cec6606202c/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_054ba6a5a8d05924d22065651402c5fa29b9c72b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/0a3b303fa15883ad5a6e901808dbdab76a9029de/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_ad6ed48a1e08e9b3ecd6a16c997ec9c12e74f92a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/50da07664f990795eeff2330a237d20018356dcf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_b5c5d55c979ebd7cf063ace4c2d954f41b6238a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/15d7c75104b32ebb8dab52ad468da57c3b478b6b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/classes_9cda8b2a68d4086801b7181b30057ccb33470e0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ilzimara/.android/build-cache/04bfe3f1a76525123d1d790c4f47f6583f3272c1/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_665925610b125980af484ca5a3ee49f384ce7ee0.jar" />
     </item>
 
 </items>

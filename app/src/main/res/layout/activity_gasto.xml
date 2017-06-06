@@ -49,10 +49,10 @@
         android:id="@+id/text_Entrada_local_gasto"/>
 
     <Button
+        android:id="@+id/salvar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/salvar"
-        android:text="Salvar"/>
+        android:text="Salvar" />
 
 
 </LinearLayout>
