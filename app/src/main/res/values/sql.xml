@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ############################################################################################### -->
+
+    <string name="sql_create_table_forma_pagamento">
+        CREATE TABLE forma_de_pagamento (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            descricao VARCHAR(45)
+        );
+    </string>
+    <string name="sql_create_table_tipo">
+        CREATE TABLE tipo (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            descricao VARCHAR
+        );
+    </string>
+    <string name="sql_create_table_gasto">
+        CREATE TABLE gasto (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            valor REAL,
+            data DATE,
+            id_forma INTEGER,
+            id_tipo INTEGER,
+            local VARCHAR,
+
+            FOREIGN KEY (id_forma) REFERENCES forma_de_pagamento(id),
+            FOREIGN KEY (id_tipo) REFERENCES tipo(id)
+        );
+    </string>
+    <!-- ############################################################################################### -->
+    <string name="sql_insert_gasto">
+        INSERT INTO gasto (id, valor, data, id_forma, id_tipo, local)
+        VALUES (NULL, ?, ?, ?, ?, ?);
+    </string>
+    <string name="sql_update_gasto">
+        UPDATE gasto SET valor = ?, data = ?, id_forma = ?, id_tipo = ?, local = ?
+        WHERE id = ?;
+    </string>
+
+    <!-- ############################################################################################### -->
+    <string name="sql_insert_forma_pagamento">
+        INSERT INTO forma_de_pagamento (id, descricao)
+        VALUES (NULL, ?);
+    </string>
+    <string name="sql_update_forma_pagamento">
+        UPDATE forma_de_pagamento SET descricao = ?
+        WHERE id = ?;
+    </string>
+
+
+    <!-- ############################################################################################### -->
+
+    <string name="sql_insert_contas">
+        INSERT INTO tipo (id, descricao)
+        VALUES (NULL, ?);
+    </string>
+    <string name="sql_update_contas">
+        UPDATE tipo SET descricao = ?
+        WHERE id = ?;
+    </string>
+
+    <!-- ############################################################################################### -->
+</resources>

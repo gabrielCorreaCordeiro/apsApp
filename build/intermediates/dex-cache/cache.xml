@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/Documentos/programação_de_aplicativos/Financeiro/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/home/gabriel/Documentos/programação_de_aplicativos/Financeiro/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6365a7f723ef7edc789d397a96880bfa79791cda/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/Documentos/programação_de_aplicativos/Financeiro/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ce7e0f42eab9b716caf46b8ec5a36d8aa3b2b733">
+        <dex dex="/home/gabriel/Documentos/programação_de_aplicativos/Financeiro/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4fed7dff497a564c62353a60b9f5f2685fdf16f0/classes.dex" />
+    </item>
+
+</items>
