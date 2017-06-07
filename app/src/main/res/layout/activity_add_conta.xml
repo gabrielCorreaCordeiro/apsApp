@@ -1,56 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.05">
-
+        android:layout_height="match_parent">
 
         <Spinner
-            android:id="@+id/tranferencia_conta_origem"
+            android:id="@+id/add_banco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="31dp" />
-
-        <Spinner
-            android:id="@+id/tranferencia_conta_destino"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/tranferencia_conta_origem"
-            android:layout_marginTop="42dp" />
+            android:layout_marginTop="38dp" />
 
         <EditText
-            android:id="@+id/transferencia_valor"
+            android:id="@+id/add_agencia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/tranferencia_conta_destino"
-            android:layout_marginTop="51dp"
+            android:layout_below="@+id/add_banco"
+            android:layout_marginTop="33dp"
             android:ems="10"
-            android:hint="Valor"
-            android:inputType="numberDecimal" />
+            android:inputType="textPersonName"
+            android:text="Agência" />
 
-        <Button
-            android:id="@+id/tranferencia_salvar"
+        <EditText
+            android:id="@+id/add_num_conta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/transferencia_valor"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="54dp"
-            android:text="Salvar" />
-    </RelativeLayout>
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/add_agencia"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Conta" />
 
+        <Button
+            android:id="@+id/add_salvar_conta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_num_conta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:text="Salvar" />
+
+    </RelativeLayout>
 </LinearLayout>
