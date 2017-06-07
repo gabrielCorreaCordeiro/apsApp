@@ -65,7 +65,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
     }
     private void buildLocal(){
-        local = (EditText) findViewById(R.id.text_Entrada_local_gasto);
+        local = (EditText) findViewById(R.id.text_Entrada_descricao_gasto);
     }
 
     private void buildButton(){

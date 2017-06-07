@@ -45,8 +45,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="local"
-        android:id="@+id/text_Entrada_local_gasto"/>
+        android:hint="descrição"
+        android:id="@+id/text_Entrada_descricao_gasto"/>
 
     <Button
         android:id="@+id/salvar"
