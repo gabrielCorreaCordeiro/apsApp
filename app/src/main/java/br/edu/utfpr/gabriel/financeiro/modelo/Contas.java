@@ -9,6 +9,7 @@ public class Contas {
     private String descricao;
     private String agencia;
     private String conta;
+    private String saldo;
 
     public Contas() {
     }
@@ -54,5 +55,13 @@ public class Contas {
 
     public void setConta(String conta) {
         this.conta = conta;
+    }
+
+    public String getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(String saldo) {
+        this.saldo = saldo;
     }
 }
