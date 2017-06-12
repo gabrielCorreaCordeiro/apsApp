@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/transferencia_conta_origem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="33dp" />
+
+        <Spinner
+            android:id="@+id/transferencia_conta_destino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/transferencia_conta_origem"
+            android:layout_marginTop="42dp" />
+
+        <EditText
+            android:id="@+id/tranferencia_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/transferencia_conta_destino"
+            android:layout_marginTop="42dp"
+            android:ems="10"
+            android:hint="data"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/transferencia_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Valor"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/transferencia_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transferencia_valor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:text="Salvar" />
+
+    </RelativeLayout>
+</LinearLayout>
