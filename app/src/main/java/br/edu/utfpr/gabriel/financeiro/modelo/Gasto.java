@@ -10,7 +10,7 @@ public class Gasto {
     private int id;
     private float valor;
     private Date data;
-    private Contas tipo;
+    private Contas conta;
     private FormaDePagamento formaDePagamento;
     private String descricaoGasto;
 
@@ -38,12 +38,12 @@ public class Gasto {
         this.data = data;
     }
 
-    public Contas getTipo() {
-        return tipo;
+    public Contas getConta() {
+        return conta;
     }
 
-    public void setTipo(Contas tipo) {
-        this.tipo = tipo;
+    public void setConta(Contas tipo) {
+        this.conta = tipo;
     }
 
     public FormaDePagamento getFormaDePagamento() {

@@ -5,8 +5,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.text.Normalizer;
-
 import br.edu.utfpr.gabriel.financeiro.R;
 import br.edu.utfpr.gabriel.financeiro.modelo.Gasto;
 import br.edu.utfpr.gabriel.financeiro.util.FormatAll;
@@ -26,7 +24,7 @@ public class GastoAdapter extends AbstractAdapter<GastoAdapter.ViewHolder,Gasto>
     protected void onBindViewHolder(ViewHolder holder, int position, Gasto item) {
         ///set data a partir de minha nova classe de utilidades :D
         holder.textDia.setText(FormatAll.formatData(item.getData(),FormatAll.FORMATO_DIA));
-        holder.textTipoGasto.setText(item.getTipo().getDescricao());
+        holder.textTipoGasto.setText(item.getConta().getDescricao());
         holder.textValorGasto.setText(FormatAll.formatValor(item.getValor()));
 
         int mes = Integer.parseInt(FormatAll.formatData(item.getData(),FormatAll.FORMATO_MES));

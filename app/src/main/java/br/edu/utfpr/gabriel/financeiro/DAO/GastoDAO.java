@@ -30,7 +30,7 @@ public class GastoDAO extends DAO<Gasto> {
         gasto.setData(FormatAll.formatStringForDate(cursor.getString(cursor.getColumnIndex("data")),"yyyy-MM-dd"));
         gasto.setValor(cursor.getFloat(cursor.getColumnIndex("valor")));
 
-        gasto.setTipo(tipoDAO.findOne(cursor.getInt(cursor.getColumnIndex("id_tipo"))));
+        gasto.setConta(tipoDAO.findOne(cursor.getInt(cursor.getColumnIndex("id_tipo"))));
         gasto.setFormaDePagamento(formaDAO.findOne(cursor.getInt(cursor.getColumnIndex("id_forma"))));
         gasto.setDescricaoGasto((cursor.getString(cursor.getColumnIndex("local"))));
 
@@ -45,7 +45,7 @@ public class GastoDAO extends DAO<Gasto> {
                 gasto.getValor(),
                 FormatAll.formatData(gasto.getData(), "yyyy-MM-dd"),
                 gasto.getFormaDePagamento().getId(),
-                gasto.getTipo().getId(),
+                gasto.getConta().getId(),
                 gasto.getDescricaoGasto()
         );
 
@@ -60,7 +60,7 @@ public class GastoDAO extends DAO<Gasto> {
                 gasto.getValor(),
                 FormatAll.formatData(gasto.getData(), "yyyy-MM-dd"),
                 gasto.getFormaDePagamento().getId(),
-                gasto.getTipo().getId(),
+                gasto.getConta().getId(),
                 gasto.getDescricaoGasto(),
                 id
         );

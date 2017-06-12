@@ -7,6 +7,9 @@ package br.edu.utfpr.gabriel.financeiro.modelo;
 public class Contas {
     private int id;
     private String descricao;
+    private String agencia;
+    private String conta;
+    private String saldo;
 
     public Contas() {
     }
@@ -35,5 +38,30 @@ public class Contas {
     @Override
     public String toString() {
         return descricao;
+    }
+
+
+    public String getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
+    }
+
+    public String getConta() {
+        return conta;
+    }
+
+    public void setConta(String conta) {
+        this.conta = conta;
+    }
+
+    public String getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(String saldo) {
+        this.saldo = saldo;
     }
 }

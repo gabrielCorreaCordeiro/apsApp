@@ -65,7 +65,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
     }
     private void buildLocal(){
-        local = (EditText) findViewById(R.id.text_Entrada_local_gasto);
+        local = (EditText) findViewById(R.id.text_Entrada_descricao_gasto);
     }
 
     private void buildButton(){
@@ -83,7 +83,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
         return (FormaDePagamento) forma.getItemAtPosition(pos);
     }
 
-    private Contas getTipoDeGasto(){
+    private Contas getConta(){
         int pos = mGastoSpinner.getSelectedItemPosition();
         return (Contas) mGastoSpinner.getItemAtPosition(pos);
     }
@@ -96,7 +96,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
         gasto.setDescricaoGasto(local.getText().toString());
         gasto.setValor(Float.parseFloat(valor.getText().toString()));
         gasto.setFormaDePagamento(getFormaPagamento());
-        gasto.setTipo(getTipoDeGasto());
+        gasto.setConta(getConta());
         gasto.setData(FormatAll.formatStringForDate(data.getText().toString(),"dd/MM/yyyy"));
         gasto.setDescricaoGasto(local.getText().toString());
 
