@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import br.edu.utfpr.gabriel.financeiro.R;
-import br.edu.utfpr.gabriel.financeiro.modelo.Gasto;
+import br.edu.utfpr.gabriel.financeiro.modelo.MovimentacaoConta;
 import br.edu.utfpr.gabriel.financeiro.util.FormatAll;
 
 /**
@@ -14,14 +14,14 @@ import br.edu.utfpr.gabriel.financeiro.util.FormatAll;
  */
 
 /// referencio a classe genérica AbstractAdapter e implemento seus metodos
-public class GastoAdapter extends AbstractAdapter<GastoAdapter.ViewHolder,Gasto>{
+public class GastoAdapter extends AbstractAdapter<GastoAdapter.ViewHolder,MovimentacaoConta>{
     public GastoAdapter(Context context) {
         super(context);
     }
 
     @Override
     /// onde seto cada item e adiciono os textos
-    protected void onBindViewHolder(ViewHolder holder, int position, Gasto item) {
+    protected void onBindViewHolder(ViewHolder holder, int position, MovimentacaoConta item) {
         ///set data a partir de minha nova classe de utilidades :D
         holder.textDia.setText(FormatAll.formatData(item.getData(),FormatAll.FORMATO_DIA));
         holder.textTipoGasto.setText(item.getConta().getDescricao());

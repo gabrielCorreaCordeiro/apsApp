@@ -14,7 +14,7 @@ import br.edu.utfpr.gabriel.financeiro.DAO.CategoriaMovimentacaoDAO;
 import br.edu.utfpr.gabriel.financeiro.DAO.MovimentacaoContaDAO;
 import br.edu.utfpr.gabriel.financeiro.DAO.ContasDAO;
 import br.edu.utfpr.gabriel.financeiro.modelo.CategoriaMovimentacao;
-import br.edu.utfpr.gabriel.financeiro.modelo.Gasto;
+import br.edu.utfpr.gabriel.financeiro.modelo.MovimentacaoConta;
 import br.edu.utfpr.gabriel.financeiro.modelo.Contas;
 import br.edu.utfpr.gabriel.financeiro.util.FormatAll;
 
@@ -90,18 +90,18 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
 
 
-    private Gasto  getGasto (){
-        Gasto gasto = new Gasto();
+    private MovimentacaoConta getGasto (){
+        MovimentacaoConta movimentacaoConta = new MovimentacaoConta();
 
-        gasto.setDescricaoGasto(local.getText().toString());
-        gasto.setValor(Float.parseFloat(valor.getText().toString()));
-        gasto.setCategoriaMovimentacao(getFormaPagamento());
-        gasto.setConta(getConta());
-        gasto.setData(FormatAll.formatStringForDate(data.getText().toString(),"dd/MM/yyyy"));
-        gasto.setDescricaoGasto(local.getText().toString());
+        movimentacaoConta.setDescricaoGasto(local.getText().toString());
+        movimentacaoConta.setValor(Float.parseFloat(valor.getText().toString()));
+        movimentacaoConta.setCategoriaMovimentacao(getFormaPagamento());
+        movimentacaoConta.setConta(getConta());
+        movimentacaoConta.setData(FormatAll.formatStringForDate(data.getText().toString(),"dd/MM/yyyy"));
+        movimentacaoConta.setDescricaoGasto(local.getText().toString());
 
 
-        return gasto;
+        return movimentacaoConta;
 
     }
 

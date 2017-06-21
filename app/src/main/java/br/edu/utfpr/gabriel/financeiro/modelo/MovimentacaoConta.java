@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by gabriel on 27/11/16.
  */
 
-public class Gasto {
+public class MovimentacaoConta {
     private int id;
     private float valor;
     private Date data;
