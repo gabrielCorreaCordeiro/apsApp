@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/57ed0d410e24d4ee638a5b574e0deb8eacc7127f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8de62a4366f82821ba4c16dd60a980551b20c123/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/cbbfca9dc508fab4f51f202a0a57de3594ee82b6/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_127862d4c4a17e91325645166ac16437866d503f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_41ffe8dc939c57485371065fd85e291e8fb642a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/ffd6daff2e59d595b0873be5edbf32b63214429d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_84a0b5eb9c27541c416582347792a232945b96fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/e7390d60fd670faa634300b26ec6a1ffd8c4e145/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d731cfe7120fbb8823a46a0234711fb0c4676a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_5c062f344ce878c3470bb974dde5dc3b1c8be596/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/1f7b7b9ec36d5c611b1cfb39d6b59a45e946dfe0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7226313fc139b5a97b9b150c86e68c3603dc4706/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/9518da592abaabc587cba10b2acce96c485f3ba9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7827b7ec24d315109322e01ac28aca1e92ba9fbc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/9132911d78d567cc4d504603c805aa1333d0d61f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aad03e2f2a38a6370c2229319dd0391aad2462f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/3fe1c5e8290ea9261e28125ee985e4e0f539f402/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_69ed0391d35cb36edd4af20840966361ac8a8b45/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/1f7b7b9ec36d5c611b1cfb39d6b59a45e946dfe0/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_63228d4eea5b16edf8ccd73ab68e493f50dd2eb4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/a6bdaf846c8ac1c69e9ff2dc74b06e865e110603/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2fd1483bcd5dbb56013653088533dd8b7b8506f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/ce7f6e3bc72e427fab0071d62fa2c4ff25846a16/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b2e8db271a0ca80fd9016f7fdde965bea30d55fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/1ab354ccef6287c8362fc83e7db726f7003b4420/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7649162c6c4a844cc381890b8140580827a76211/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6b2169ee502d4ca18bb41c2c1eff1cde017bc143">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_bd47e66f64522ba11cd74db197157ad6cb800cca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/cbbfca9dc508fab4f51f202a0a57de3594ee82b6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5bc1ea80d6a66f8f1d478fc8305bd4f36df5f863/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/3967f45eeb27d29efe10c17330f8d0d23d13d033/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_0bb17fc0b1593f42c754831969a1a5b5603985b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/1ab354ccef6287c8362fc83e7db726f7003b4420/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_423deabae1cc3e75d33a538f16d8756769cb88ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/ffd6daff2e59d595b0873be5edbf32b63214429d/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_392698aacdc4e8df3df2d11c8ace2be34705906e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/3967f45eeb27d29efe10c17330f8d0d23d13d033/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3fc2660b01d1dba7d4f21d617c5ca9aaafd5c3df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/90f0bf0a1707be4dfebc116cc1b9c48bb60029e7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6b8e84456d77e2a4659e258c8fc956aa83def4f0/classes.dex" />
+    </item>
+
+</items>

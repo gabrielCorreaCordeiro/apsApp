@@ -14,7 +14,7 @@ public class ContasDAO extends DAO<Contas> {
 
     public ContasDAO(Context context) {
         super(context);
-        tabela = "tipo";
+        tabela = "conta";
     }
 
     @Override

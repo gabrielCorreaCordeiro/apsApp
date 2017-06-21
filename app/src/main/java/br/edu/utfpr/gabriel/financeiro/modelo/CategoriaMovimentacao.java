@@ -4,15 +4,15 @@ package br.edu.utfpr.gabriel.financeiro.modelo;
  * Created by gabriel on 27/11/16
  */
 
-public class FormaDePagamento {
+public class CategoriaMovimentacao {
 
     private int id;
     private String descricao;
 
-    public FormaDePagamento() {
+    public CategoriaMovimentacao() {
     }
 
-    public FormaDePagamento(int id, String descricao) {
+    public CategoriaMovimentacao(int id, String descricao) {
         this.id = id;
         this.descricao = descricao;
     }

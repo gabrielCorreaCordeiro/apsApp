@@ -11,9 +11,9 @@ import br.edu.utfpr.gabriel.financeiro.util.FormatAll;
  * Created by gabriel on 27/11/16
  */
 
-public class GastoDAO extends DAO<Gasto> {
+public class MovimentacaoContaDAO extends DAO<Gasto> {
 
-    public GastoDAO(Context context) {
+    public MovimentacaoContaDAO(Context context) {
         super(context);
         tabela = "movimentacao_conta";
     }
@@ -24,7 +24,7 @@ public class GastoDAO extends DAO<Gasto> {
     protected Gasto mountObject(Cursor cursor) {
         Gasto gasto = new Gasto();
         ContasDAO tipoDAO = new ContasDAO(context);
-        FormaDePagamentoDAO formaDAO = new FormaDePagamentoDAO(context);
+        CategoriaMovimentacaoDAO formaDAO = new CategoriaMovimentacaoDAO(context);
 
         gasto.setId(cursor.getInt(cursor.getColumnIndex("id")));
         gasto.setData(FormatAll.formatStringForDate(cursor.getString(cursor.getColumnIndex("data")),"yyyy-MM-dd"));

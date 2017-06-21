@@ -27,14 +27,14 @@ public abstract class DAO<T> extends SQLiteOpenHelper {
     ///create das tabelas referenciadas no sql.xml
     @Override
     public void onCreate(SQLiteDatabase db) {
-        final String SQL_CREATE_TABLE_FORMA_PAGAMENTO = context.getString(R.string.sql_create_table_forma_pagamento);
+        final String SQL_CREATE_TABLE_FORMA_PAGAMENTO = context.getString(R.string.sql_create_table_categoria_movimentacao);
         db.execSQL(SQL_CREATE_TABLE_FORMA_PAGAMENTO);
 
-        final String SQL_CREATE_TABLE_TIPO = context.getString(R.string.sql_create_table_tipo);
+        final String SQL_CREATE_TABLE_TIPO = context.getString(R.string.sql_create_table_conta);
         db.execSQL(SQL_CREATE_TABLE_TIPO);
 
 
-        final String SQL_CREATE_TABLE_GASTO = context.getString(R.string.sql_create_table_gasto);
+        final String SQL_CREATE_TABLE_GASTO = context.getString(R.string.sql_create_table_movimentacao_conta);
         db.execSQL(SQL_CREATE_TABLE_GASTO);
 
         final String SQL_INSERT_DEFAULT_TIPO = context.getString(R.string.sql_insert_contas);
@@ -43,7 +43,7 @@ public abstract class DAO<T> extends SQLiteOpenHelper {
         db.execSQL(SQL_INSERT_DEFAULT_TIPO,new String[]{"BRADESCO"});
 
 
-        final String SQL_INSERT_DEFAULT_FORMA = context.getString(R.string.sql_insert_forma_pagamento);
+        final String SQL_INSERT_DEFAULT_FORMA = context.getString(R.string.sql_insert_categoria_movimentacao);
         db.execSQL(SQL_INSERT_DEFAULT_FORMA,new String[]{"Cartão de Crédito"});
         db.execSQL(SQL_INSERT_DEFAULT_FORMA,new String[]{"Cartão de Débito"});
         db.execSQL(SQL_INSERT_DEFAULT_FORMA,new String[]{"Dinheiro"});

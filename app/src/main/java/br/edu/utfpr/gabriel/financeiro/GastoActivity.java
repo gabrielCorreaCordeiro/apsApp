@@ -10,10 +10,10 @@ import android.widget.Spinner;
 
 import java.util.List;
 
-import br.edu.utfpr.gabriel.financeiro.DAO.FormaDePagamentoDAO;
-import br.edu.utfpr.gabriel.financeiro.DAO.GastoDAO;
+import br.edu.utfpr.gabriel.financeiro.DAO.CategoriaMovimentacaoDAO;
+import br.edu.utfpr.gabriel.financeiro.DAO.MovimentacaoContaDAO;
 import br.edu.utfpr.gabriel.financeiro.DAO.ContasDAO;
-import br.edu.utfpr.gabriel.financeiro.modelo.FormaDePagamento;
+import br.edu.utfpr.gabriel.financeiro.modelo.CategoriaMovimentacao;
 import br.edu.utfpr.gabriel.financeiro.modelo.Gasto;
 import br.edu.utfpr.gabriel.financeiro.modelo.Contas;
 import br.edu.utfpr.gabriel.financeiro.util.FormatAll;
@@ -21,7 +21,7 @@ import br.edu.utfpr.gabriel.financeiro.util.FormatAll;
 public class GastoActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    private FormaDePagamentoDAO daoForma;
+    private CategoriaMovimentacaoDAO daoForma;
     private ContasDAO dao;
     private Spinner mGastoSpinner;
     private EditText data;
@@ -36,7 +36,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_gasto);
 
         dao = new ContasDAO(this);
-        daoForma = new FormaDePagamentoDAO(this);
+        daoForma = new CategoriaMovimentacaoDAO(this);
         buildGastoSpinner();
         buildFormaDePagamento();
         buildButton();
@@ -53,8 +53,8 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
         mGastoSpinner.setAdapter(adapter);
     }
     private  void buildFormaDePagamento() {
-        List<FormaDePagamento> list = daoForma.findAll("descricao","ASC");
-        ArrayAdapter<FormaDePagamento> adapter = new ArrayAdapter<FormaDePagamento>(this,android.R.layout.simple_list_item_1,list);
+        List<CategoriaMovimentacao> list = daoForma.findAll("descricao","ASC");
+        ArrayAdapter<CategoriaMovimentacao> adapter = new ArrayAdapter<CategoriaMovimentacao>(this,android.R.layout.simple_list_item_1,list);
 
         forma = (Spinner) findViewById(R.id.spinner_forma);
         forma.setAdapter(adapter);
@@ -78,9 +78,9 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
         data = (EditText) findViewById(R.id.text_entrada_data);
     }
 
-    private FormaDePagamento getFormaPagamento (){
+    private CategoriaMovimentacao getFormaPagamento (){
         int pos = forma.getSelectedItemPosition();
-        return (FormaDePagamento) forma.getItemAtPosition(pos);
+        return (CategoriaMovimentacao) forma.getItemAtPosition(pos);
     }
 
     private Contas getConta(){
@@ -95,7 +95,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
         gasto.setDescricaoGasto(local.getText().toString());
         gasto.setValor(Float.parseFloat(valor.getText().toString()));
-        gasto.setFormaDePagamento(getFormaPagamento());
+        gasto.setCategoriaMovimentacao(getFormaPagamento());
         gasto.setConta(getConta());
         gasto.setData(FormatAll.formatStringForDate(data.getText().toString(),"dd/MM/yyyy"));
         gasto.setDescricaoGasto(local.getText().toString());
@@ -107,8 +107,8 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-        GastoDAO gastoDAO = new GastoDAO(this);
-        gastoDAO.insert(getGasto());
+        MovimentacaoContaDAO movimentacaoContaDAO = new MovimentacaoContaDAO(this);
+        movimentacaoContaDAO.insert(getGasto());
         finish();
 
     }

@@ -3,7 +3,6 @@ package br.edu.utfpr.gabriel.financeiro;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
@@ -16,11 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.ArrayList;
-
-import br.edu.utfpr.gabriel.financeiro.DAO.GastoDAO;
+import br.edu.utfpr.gabriel.financeiro.DAO.MovimentacaoContaDAO;
 import br.edu.utfpr.gabriel.financeiro.adapter.GastoAdapter;
-import br.edu.utfpr.gabriel.financeiro.modelo.Gasto;
 
 public class PrincipalActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,View.OnClickListener {
@@ -138,9 +134,9 @@ public class PrincipalActivity extends AppCompatActivity
 
 
     private void preencherListaGasto(){
-        GastoDAO gastoDAO = new GastoDAO(this);
+        MovimentacaoContaDAO movimentacaoContaDAO = new MovimentacaoContaDAO(this);
         GastoAdapter adapter = new GastoAdapter(this);
-        adapter.setItems(gastoDAO.findAll("data","DESC"));
+        adapter.setItems(movimentacaoContaDAO.findAll("data","DESC"));
         listGasto.setAdapter(adapter);
     }
 

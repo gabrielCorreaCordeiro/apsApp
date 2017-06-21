@@ -10,8 +10,8 @@ import br.edu.utfpr.gabriel.financeiro.modelo.CategoriaMovimentacao;
  * Created by gabriel on 30/11/16
  */
 
-public class FormaDePagamentoDAO extends DAO<CategoriaMovimentacao> {
-    public FormaDePagamentoDAO(Context context) {
+public class CategoriaMovimentacaoDAO extends DAO<CategoriaMovimentacao> {
+    public CategoriaMovimentacaoDAO(Context context) {
         super(context);
         tabela = "categoria_movimentacao";
     }
@@ -42,7 +42,7 @@ public class FormaDePagamentoDAO extends DAO<CategoriaMovimentacao> {
     // faz um update no banco do objeto formaDePagamento
     public CategoriaMovimentacao update(CategoriaMovimentacao objeto, int id) {
         execute(
-                context.getString(R.string.sql_update_ategoria_movimentacao),
+                context.getString(R.string.sql_update_categoria_movimentacao),
                 objeto.getDescricao(),
                 id
         );

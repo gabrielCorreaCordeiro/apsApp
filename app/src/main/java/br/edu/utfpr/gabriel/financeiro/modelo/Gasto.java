@@ -11,7 +11,7 @@ public class Gasto {
     private float valor;
     private Date data;
     private Contas conta;
-    private FormaDePagamento formaDePagamento;
+    private CategoriaMovimentacao categoriaMovimentacao;
     private String descricaoGasto;
 
     public int getId() {
@@ -46,12 +46,12 @@ public class Gasto {
         this.conta = tipo;
     }
 
-    public FormaDePagamento getFormaDePagamento() {
-        return formaDePagamento;
+    public CategoriaMovimentacao getCategoriaMovimentacao() {
+        return categoriaMovimentacao;
     }
 
-    public void setFormaDePagamento(FormaDePagamento formaDePagamento) {
-        this.formaDePagamento = formaDePagamento;
+    public void setCategoriaMovimentacao(CategoriaMovimentacao categoriaMovimentacao) {
+        this.categoriaMovimentacao = categoriaMovimentacao;
     }
 
     public String getDescricaoGasto() {
