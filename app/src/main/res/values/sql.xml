@@ -2,48 +2,76 @@
 <resources>
     <!-- ############################################################################################### -->
 
-    <string name="sql_create_table_forma_pagamento">
-        CREATE TABLE forma_de_pagamento (
+    <string name="sql_create_table_categoria_movimentacao">
+        CREATE TABLE categoria_movimentacao (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             descricao VARCHAR(45)
         );
     </string>
-    <string name="sql_create_table_tipo">
-        CREATE TABLE tipo (
+    <string name="sql_create_table_conta">
+        CREATE TABLE conta (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            descricao VARCHAR,
+            saldo INTEGER,
+            id_categoria INTEGER,
+            id_banco INTERGER,
+
+            FOREIGN KEY (id_categoria) REFERENCES categoriaConta(id),
+            FOREIGN KEY (id_banco) REFERENCES banco(id)
+
+        );
+    </string>
+    <string name="sql_create_table_movimentacao_conta">
+        CREATE TABLE movimentacao_conta (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            valor REAL,
+            data DATE,
+            id_categoria_movi INTEGER,
+            id_conta INTEGER,
+            id_tipo_movi INTEGER,
+
+            FOREIGN KEY (id_categoria_movi) REFERENCES categoria_movimentacao(id),
+            FOREIGN KEY (id_conta) REFERENCES conta(id),
+            FOREIGN KEY (id_tipo_movi) REFERENCES tipo_movimentacao(id)
+        );
+    </string>
+    <string name="sql_create_table_tipo_movimentacao">
+        CREATE TABLE tipo_movimentacao (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             descricao VARCHAR
         );
     </string>
-    <string name="sql_create_table_gasto">
-        CREATE TABLE gasto (
+    <string name="sql_create_categoria_conta">
+        CREATE TABLE categoria_conta (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            valor REAL,
-            data DATE,
-            id_forma INTEGER,
-            id_tipo INTEGER,
-            local VARCHAR,
-
-            FOREIGN KEY (id_forma) REFERENCES forma_de_pagamento(id),
-            FOREIGN KEY (id_tipo) REFERENCES tipo(id)
+            descricao VARCHAR
         );
     </string>
-    <!-- ############################################################################################### -->
-    <string name="sql_insert_gasto">
-        INSERT INTO gasto (id, valor, data, id_forma, id_tipo, local)
-        VALUES (NULL, ?, ?, ?, ?, ?);
-    </string>
-    <string name="sql_update_gasto">
-        UPDATE gasto SET valor = ?, data = ?, id_forma = ?, id_tipo = ?, local = ?
-        WHERE id = ?;
+    <string name="sql_create_banco">
+        CREATE TABLE banco (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nomeBanco VARCHAR
+        );
     </string>
 
     <!-- ############################################################################################### -->
-    <string name="sql_insert_forma_pagamento">
-        INSERT INTO forma_de_pagamento (id, descricao)
+    <string name="sql_insert_movientacao_conta">
+        INSERT INTO movimentacao_conta (id, valor, data, id_categoria_movi, id_conta,id_tipo_movi)
+        VALUES (NULL, ?, ?, ?, ?, ?);
+    </string>
+    <string name="sql_update_movimentacao_conta">
+        UPDATE movimentacao_conta SET valor = ?, data = ?, id_categoria_movi = ?, id_conta = ?, id_tipo_movi = ?
+        WHERE id = ?;
+    </string>
+    
+    
+    <!-- ############################################################################################### -->
+    <string name="sql_insert_categoria_movimentacao">
+        INSERT INTO categoria_movimentacao (id, descricao)
         VALUES (NULL, ?);
     </string>
-    <string name="sql_update_forma_pagamento">
-        UPDATE forma_de_pagamento SET descricao = ?
+    <string name="sql_update_categoria_movimentacao">
+        UPDATE categoria_movimentacao  SET descricao = ?
         WHERE id = ?;
     </string>
 
@@ -51,13 +79,44 @@
     <!-- ############################################################################################### -->
 
     <string name="sql_insert_contas">
-        INSERT INTO tipo (id, descricao)
-        VALUES (NULL, ?);
+        INSERT INTO conta (id, descricao,saldo,id_categoria,id_banco)
+        VALUES (NULL, ?,?,?,?);
     </string>
     <string name="sql_update_contas">
-        UPDATE tipo SET descricao = ?
+        UPDATE conta SET descricao = ?, saldo = ?, id_categoria = ?, id_banco = ?
         WHERE id = ?;
     </string>
 
     <!-- ############################################################################################### -->
+    
+    <string name="sql_insert_banco">
+        INSERT INTO banco (id,descricao)
+        VALUES (NULL,?);
+    </string>
+    <string name="sql_update_banco">
+        UPDATE banco SET decricao = ?
+        WHERE id = ?;
+    </string>
+
+    <!-- ############################################################################################### -->
+    
+    <string name="sql_insert_categoria_conta">
+        INSERT INTO categoria_conta (id,descricao)
+        VALUES (NULL,?);
+    </string>
+    <string name="sql_update_categoria_conta">
+        UPDATE categoria_conta SET descricao = ?
+        WHERE id = ?;
+    </string>
+
+    <!-- ############################################################################################### -->
+    
+    <string name="sql_insert_tipo_movimentacao">
+        INSERT INTO tipo_movimentacao (id,descricao)
+        VALUES (NULL,?);
+    </string>
+    <string name="sql_update_tipo_movimentacao">
+        UPDATE tipo_movimentacao SET descricao = ?;
+        WHERE id = ?;
+    </string>
 </resources>

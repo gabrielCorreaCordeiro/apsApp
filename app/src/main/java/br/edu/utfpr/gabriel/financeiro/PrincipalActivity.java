@@ -15,7 +15,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import br.edu.utfpr.gabriel.financeiro.DAO.GastoDAO;
+//<<<<<<< HEAD
+//import br.edu.utfpr.gabriel.financeiro.DAO.GastoDAO;
+//=======
+import br.edu.utfpr.gabriel.financeiro.DAO.MovimentacaoContaDAO;
+//>>>>>>> 88c1a380bf3df9835208004111b2b9e3f6bb820f
 import br.edu.utfpr.gabriel.financeiro.adapter.GastoAdapter;
 
 public class PrincipalActivity extends AppCompatActivity
@@ -134,9 +138,9 @@ public class PrincipalActivity extends AppCompatActivity
 
 
     private void preencherListaGasto(){
-        GastoDAO gastoDAO = new GastoDAO(this);
+        MovimentacaoContaDAO movimentacaoContaDAO = new MovimentacaoContaDAO(this);
         GastoAdapter adapter = new GastoAdapter(this);
-        adapter.setItems(gastoDAO.findAll("data","DESC"));
+        adapter.setItems(movimentacaoContaDAO.findAll("data","DESC"));
         listGasto.setAdapter(adapter);
     }
 
