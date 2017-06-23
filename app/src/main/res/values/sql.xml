@@ -28,7 +28,6 @@
             data DATE,
             id_categoria_movi INTEGER,
             id_conta INTEGER,
-            local VARCHAR,
             id_tipo_movi INTEGER,
 
             FOREIGN KEY (id_categoria_movi) REFERENCES categoria_movimentacao(id),
@@ -37,31 +36,31 @@
         );
     </string>
     <string name="sql_create_table_tipo_movimentacao">
-        CREATE TABLE tipo_movimentacao {
+        CREATE TABLE tipo_movimentacao (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            descricaoTipoMovimentacao VARCHAR
-        }
+            descricao VARCHAR
+        );
     </string>
     <string name="sql_create_categoria_conta">
-        CREATE TABLE categoria_conta {
+        CREATE TABLE categoria_conta (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            descricaoCategoriaConta VARCHAR
-        }
+            descricao VARCHAR
+        );
     </string>
     <string name="sql_create_banco">
-        CREATE TABLE banco {
+        CREATE TABLE banco (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             nomeBanco VARCHAR
-        }
+        );
     </string>
 
     <!-- ############################################################################################### -->
     <string name="sql_insert_movientacao_conta">
-        INSERT INTO movimentacao_conta (id, valor, data, id_forma, id_tipo, local)
+        INSERT INTO movimentacao_conta (id, valor, data, id_categoria_movi, id_conta,id_tipo_movi)
         VALUES (NULL, ?, ?, ?, ?, ?);
     </string>
     <string name="sql_update_movimentacao_conta">
-        UPDATE movimentacao_conta SET valor = ?, data = ?, id_forma = ?, id_tipo = ?, local = ?
+        UPDATE movimentacao_conta SET valor = ?, data = ?, id_categoria_movi = ?, id_conta = ?, id_tipo_movi = ?
         WHERE id = ?;
     </string>
     
@@ -80,13 +79,44 @@
     <!-- ############################################################################################### -->
 
     <string name="sql_insert_contas">
-        INSERT INTO conta (id, descricao)
-        VALUES (NULL, ?);
+        INSERT INTO conta (id, descricao,saldo,id_categoria,id_banco)
+        VALUES (NULL, ?,?,?,?);
     </string>
     <string name="sql_update_contas">
-        UPDATE conta SET descricao = ?
+        UPDATE conta SET descricao = ?, saldo = ?, id_categoria = ?, id_banco = ?
         WHERE id = ?;
     </string>
 
     <!-- ############################################################################################### -->
+    
+    <string name="sql_insert_banco">
+        INSERT INTO banco (id,descricao)
+        VALUES (NULL,?);
+    </string>
+    <string name="sql_update_banco">
+        UPDATE banco SET decricao = ?
+        WHERE id = ?;
+    </string>
+
+    <!-- ############################################################################################### -->
+    
+    <string name="sql_insert_categoria_conta">
+        INSERT INTO categoria_conta (id,descricao)
+        VALUES (NULL,?);
+    </string>
+    <string name="sql_update_categoria_conta">
+        UPDATE categoria_conta SET descricao = ?
+        WHERE id = ?;
+    </string>
+
+    <!-- ############################################################################################### -->
+    
+    <string name="sql_insert_tipo_movimentacao">
+        INSERT INTO tipo_movimentacao (id,descricao)
+        VALUES (NULL,?);
+    </string>
+    <string name="sql_update_tipo_movimentacao">
+        UPDATE tipo_movimentacao SET descricao = ?;
+        WHERE id = ?;
+    </string>
 </resources>

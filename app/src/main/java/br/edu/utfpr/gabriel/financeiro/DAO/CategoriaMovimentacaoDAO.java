@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 
 import br.edu.utfpr.gabriel.financeiro.R;
+import br.edu.utfpr.gabriel.financeiro.modelo.Banco;
 import br.edu.utfpr.gabriel.financeiro.modelo.CategoriaMovimentacao;
 
 /**

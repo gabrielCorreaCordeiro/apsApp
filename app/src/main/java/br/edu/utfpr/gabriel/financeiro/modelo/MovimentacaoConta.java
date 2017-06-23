@@ -12,7 +12,8 @@ public class MovimentacaoConta {
     private Date data;
     private Contas conta;
     private CategoriaMovimentacao categoriaMovimentacao;
-    private String descricaoGasto;
+    private String descricao;
+    private TipoMovimentacao tipoMovimentacao;
 
     public int getId() {
         return id;
@@ -54,11 +55,20 @@ public class MovimentacaoConta {
         this.categoriaMovimentacao = categoriaMovimentacao;
     }
 
-    public String getDescricaoGasto() {
-        return descricaoGasto;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescricaoGasto(String descricaoGasto) {
-        this.descricaoGasto = descricaoGasto;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+
+    public TipoMovimentacao getTipoMovimentacao() {
+        return tipoMovimentacao;
+    }
+
+    public void setTipoMovimentacao(TipoMovimentacao tipoMovimentacao) {
+        this.tipoMovimentacao = tipoMovimentacao;
     }
 }

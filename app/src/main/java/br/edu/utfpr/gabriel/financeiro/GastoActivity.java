@@ -93,12 +93,12 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
     private MovimentacaoConta getGasto (){
         MovimentacaoConta movimentacaoConta = new MovimentacaoConta();
 
-        movimentacaoConta.setDescricaoGasto(local.getText().toString());
+        movimentacaoConta.setDescricao(local.getText().toString());
         movimentacaoConta.setValor(Float.parseFloat(valor.getText().toString()));
         movimentacaoConta.setCategoriaMovimentacao(getFormaPagamento());
         movimentacaoConta.setConta(getConta());
         movimentacaoConta.setData(FormatAll.formatStringForDate(data.getText().toString(),"dd/MM/yyyy"));
-        movimentacaoConta.setDescricaoGasto(local.getText().toString());
+
 
 
         return movimentacaoConta;
