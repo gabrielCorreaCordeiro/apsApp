@@ -14,10 +14,12 @@
 
     </group>
 
-    <item android:title="Filtro por Banco">
-        <menu>
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/filtro_banco"
+        android:icon="@drawable/ic_menu_send"
+        android:title="Filtro por Banco">
 
-        </menu>
     </item>
-
+    </group>
 </menu>
