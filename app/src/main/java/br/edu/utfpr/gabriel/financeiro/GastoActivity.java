@@ -1,5 +1,7 @@
 package br.edu.utfpr.gabriel.financeiro;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -91,6 +93,11 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
 
     private MovimentacaoConta getMovimentacaoConta(){
+
+        if(valor.getText().toString().isEmpty()|| data.getText().toString().isEmpty() || valor.getText().toString().isEmpty()) {
+            return null;
+
+        }
         MovimentacaoConta movimentacaoConta = new MovimentacaoConta();
 
         movimentacaoConta.setDescricao(local.getText().toString());
@@ -101,15 +108,24 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
 
 
+
         return movimentacaoConta;
 
     }
 
+
+
     @Override
     public void onClick(View view) {
+        if(getMovimentacaoConta() == null ) {
+            finishActivity(0);
+        }
         MovimentacaoContaDAO movimentacaoContaDAO = new MovimentacaoContaDAO(this);
         movimentacaoContaDAO.insert(getMovimentacaoConta());
         finish();
 
     }
+
+
+
 }
