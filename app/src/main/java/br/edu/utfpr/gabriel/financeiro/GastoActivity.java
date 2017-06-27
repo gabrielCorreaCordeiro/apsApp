@@ -90,7 +90,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
 
 
-    private MovimentacaoConta getGasto (){
+    private MovimentacaoConta getMovimentacaoConta(){
         MovimentacaoConta movimentacaoConta = new MovimentacaoConta();
 
         movimentacaoConta.setDescricao(local.getText().toString());
@@ -108,7 +108,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         MovimentacaoContaDAO movimentacaoContaDAO = new MovimentacaoContaDAO(this);
-        movimentacaoContaDAO.insert(getGasto());
+        movimentacaoContaDAO.insert(getMovimentacaoConta());
         finish();
 
     }

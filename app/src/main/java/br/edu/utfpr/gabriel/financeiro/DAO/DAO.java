@@ -57,7 +57,7 @@ public abstract class DAO<T> extends SQLiteOpenHelper {
         db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIENTACAO,new String[]{"Conta Corrente"});
         db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIENTACAO,new String[]{"Dinheiro"});
 
-
+        
     }
 
     @Override
