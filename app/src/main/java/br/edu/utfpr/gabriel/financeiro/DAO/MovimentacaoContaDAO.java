@@ -23,16 +23,18 @@ public class MovimentacaoContaDAO extends DAO<MovimentacaoConta> {
     // monta um objeto do tipo MovimentacaoConta
     protected MovimentacaoConta mountObject(Cursor cursor) {
         MovimentacaoConta movimentacaoConta = new MovimentacaoConta();
-        ContasDAO tipoDAO = new ContasDAO(context);
-        CategoriaMovimentacaoDAO formaDAO = new CategoriaMovimentacaoDAO(context);
+        ContasDAO contasDAO = new ContasDAO(context);
+        CategoriaMovimentacaoDAO categoriaMovimentacaoDAO = new CategoriaMovimentacaoDAO(context);
+        TipoMovimentacaoDAO tipoMovimentacaoDAO = new TipoMovimentacaoDAO(context);
 
         movimentacaoConta.setId(cursor.getInt(cursor.getColumnIndex("id")));
         movimentacaoConta.setData(FormatAll.formatStringForDate(cursor.getString(cursor.getColumnIndex("data")),"yyyy-MM-dd"));
         movimentacaoConta.setValor(cursor.getFloat(cursor.getColumnIndex("valor")));
 
-        movimentacaoConta.setConta(tipoDAO.findOne(cursor.getInt(cursor.getColumnIndex("id_tipo"))));
-        movimentacaoConta.setCategoriaMovimentacao(formaDAO.findOne(cursor.getInt(cursor.getColumnIndex("id_forma"))));
-        movimentacaoConta.setDescricaoGasto((cursor.getString(cursor.getColumnIndex("local"))));
+        movimentacaoConta.setConta(contasDAO.findOne(cursor.getInt(cursor.getColumnIndex("id_conta"))));
+        movimentacaoConta.setCategoriaMovimentacao(categoriaMovimentacaoDAO.findOne(cursor.getInt(cursor.getColumnIndex("id_categoria_movi"))));
+        movimentacaoConta.setTipoMovimentacao(tipoMovimentacaoDAO.findOne(cursor.getInt(cursor.getColumnIndex("id_tipo_movi"))));
+
 
         return movimentacaoConta;
     }
@@ -46,7 +48,7 @@ public class MovimentacaoContaDAO extends DAO<MovimentacaoConta> {
                 FormatAll.formatData(movimentacaoConta.getData(), "yyyy-MM-dd"),
                 movimentacaoConta.getCategoriaMovimentacao().getId(),
                 movimentacaoConta.getConta().getId(),
-                movimentacaoConta.getDescricaoGasto()
+                movimentacaoConta.getDescricao()
         );
 
         return null;
@@ -61,7 +63,7 @@ public class MovimentacaoContaDAO extends DAO<MovimentacaoConta> {
                 FormatAll.formatData(movimentacaoConta.getData(), "yyyy-MM-dd"),
                 movimentacaoConta.getCategoriaMovimentacao().getId(),
                 movimentacaoConta.getConta().getId(),
-                movimentacaoConta.getDescricaoGasto(),
+                movimentacaoConta.getDescricao(),
                 id
         );
 

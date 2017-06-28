@@ -15,7 +15,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+//<<<<<<< HEAD
+//import br.edu.utfpr.gabriel.financeiro.DAO.GastoDAO;
+//=======
 import br.edu.utfpr.gabriel.financeiro.DAO.MovimentacaoContaDAO;
+//>>>>>>> 88c1a380bf3df9835208004111b2b9e3f6bb820f
 import br.edu.utfpr.gabriel.financeiro.adapter.GastoAdapter;
 
 public class PrincipalActivity extends AppCompatActivity
@@ -69,7 +73,7 @@ public class PrincipalActivity extends AppCompatActivity
     }
 
     private void buildbutton (){
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_add_gasto);
        fab.setOnClickListener(this);
 
     }

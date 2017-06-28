@@ -12,21 +12,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/gabriel/.android/build-cache/cbbfca9dc508fab4f51f202a0a57de3594ee82b6/output/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_127862d4c4a17e91325645166ac16437866d503f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_41ffe8dc939c57485371065fd85e291e8fb642a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gabriel/.android/build-cache/cbbfca9dc508fab4f51f202a0a57de3594ee82b6/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/gabriel/Documentos/Projeto_APP/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_127862d4c4a17e91325645166ac16437866d503f/classes.dex" />
     </item>
     <item
         is-multidex="true"

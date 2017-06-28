@@ -1,5 +1,7 @@
 package br.edu.utfpr.gabriel.financeiro;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -90,26 +92,42 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
 
 
-    private MovimentacaoConta getGasto (){
+    private MovimentacaoConta getMovimentacaoConta(){
+        // verifica se os campos sao nulos, caso sim, ele retorna null, pois sem esses campos é desnecessário
+        if(valor.getText().toString().isEmpty()|| data.getText().toString().isEmpty() || valor.getText().toString().isEmpty()) {
+            return null;
+
+        }
         MovimentacaoConta movimentacaoConta = new MovimentacaoConta();
 
-        movimentacaoConta.setDescricaoGasto(local.getText().toString());
+        movimentacaoConta.setDescricao(local.getText().toString());
         movimentacaoConta.setValor(Float.parseFloat(valor.getText().toString()));
         movimentacaoConta.setCategoriaMovimentacao(getFormaPagamento());
         movimentacaoConta.setConta(getConta());
         movimentacaoConta.setData(FormatAll.formatStringForDate(data.getText().toString(),"dd/MM/yyyy"));
-        movimentacaoConta.setDescricaoGasto(local.getText().toString());
+
+
 
 
         return movimentacaoConta;
 
     }
 
+
+
     @Override
     public void onClick(View view) {
+        // Se for null a movimentação ele finaliza a activity e volta a tela anterior
+        if(getMovimentacaoConta() == null ) {
+            finish();
+            return;
+        }
         MovimentacaoContaDAO movimentacaoContaDAO = new MovimentacaoContaDAO(this);
-        movimentacaoContaDAO.insert(getGasto());
+        movimentacaoContaDAO.insert(getMovimentacaoConta());
         finish();
 
     }
+
+
+
 }
