@@ -93,7 +93,11 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
 
     private MovimentacaoConta getMovimentacaoConta(){
+<<<<<<< Updated upstream
         // verifica se os campos sao nulos, caso sim, ele retorna null, pois sem esses campos é desnecessário
+=======
+
+>>>>>>> Stashed changes
         if(valor.getText().toString().isEmpty()|| data.getText().toString().isEmpty() || valor.getText().toString().isEmpty()) {
             return null;
 
@@ -117,7 +121,10 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
+<<<<<<< Updated upstream
         // Se for null a movimentação ele finaliza a activity e volta a tela anterior
+=======
+>>>>>>> Stashed changes
         if(getMovimentacaoConta() == null ) {
             finish();
             return;
