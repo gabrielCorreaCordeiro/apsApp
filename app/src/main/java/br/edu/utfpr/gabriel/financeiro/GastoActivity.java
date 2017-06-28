@@ -93,7 +93,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
 
     private MovimentacaoConta getMovimentacaoConta(){
-
+        // verifica se os campos sao nulos, caso sim, ele retorna null, pois sem esses campos é desnecessário
         if(valor.getText().toString().isEmpty()|| data.getText().toString().isEmpty() || valor.getText().toString().isEmpty()) {
             return null;
 
@@ -117,6 +117,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
+        // Se for null a movimentação ele finaliza a activity e volta a tela anterior
         if(getMovimentacaoConta() == null ) {
             finish();
             return;
