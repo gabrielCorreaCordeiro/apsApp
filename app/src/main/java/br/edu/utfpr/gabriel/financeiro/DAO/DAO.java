@@ -53,9 +53,17 @@ public abstract class DAO<T> extends SQLiteOpenHelper {
         db.execSQL(SQL_INSERT_DEFAULT_CONTAS,new String[]{"BRADESCO"});
 
 
-        final String SQL_INSERT_DEFAULT_CATEGORIA_MOVIENTACAO = context.getString(R.string.sql_insert_categoria_movimentacao);
-        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIENTACAO,new String[]{"Conta Corrente"});
-        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIENTACAO,new String[]{"Dinheiro"});
+        final String SQL_INSERT_DEFAULT_CATEGORIA_CONTA = context.getString(R.string.sql_insert_categoria_conta);
+        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_CONTA,new String[]{"Conta Corrente"});
+        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_CONTA,new String[]{"Dinheiro"});
+
+        final String SQL_INSERT_DEFAULT_CATEGORIA_MOVIMENTACAO = context.getString(R.string.sql_insert_categoria_movimentacao);
+        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIMENTACAO, new String[]{"Alimentação"});
+        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIMENTACAO, new String[]{"Saúde"});
+        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIMENTACAO, new String[]{"Transporte"});
+        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIMENTACAO, new String[]{"Vestuário"});
+        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIMENTACAO, new String[]{"Entretenimento"});
+        db.execSQL(SQL_INSERT_DEFAULT_CATEGORIA_MOVIMENTACAO, new String[]{"Casa"});
 
 
     }

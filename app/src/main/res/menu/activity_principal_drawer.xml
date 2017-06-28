@@ -5,21 +5,29 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_add_white_24dp"
-            android:title="Adicionar Gastos" />
+            android:title="Gerenciar Gastos" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Adicionar Conta" />
+            android:title="Gerenciar Conta" />
 
 
     </group>
 
     <group android:checkableBehavior="single">
     <item
-        android:id="@+id/filtro_banco"
+        android:id="@+id/transferencia"
         android:icon="@drawable/ic_menu_send"
-        android:title="Filtro por Banco">
+        android:title="Transferência">
 
     </item>
+
+    <item
+        android:id="@+id/deposito"
+        android:icon="@drawable/ic_menu_send"
+        android:title="Deposito">
+
+    </item>
+
     </group>
 </menu>
