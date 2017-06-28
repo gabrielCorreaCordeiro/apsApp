@@ -118,7 +118,8 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if(getMovimentacaoConta() == null ) {
-            finishActivity(0);
+            finish();
+            return;
         }
         MovimentacaoContaDAO movimentacaoContaDAO = new MovimentacaoContaDAO(this);
         movimentacaoContaDAO.insert(getMovimentacaoConta());
