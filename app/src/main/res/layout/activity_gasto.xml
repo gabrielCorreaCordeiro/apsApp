@@ -15,14 +15,21 @@
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_forma">
+        android:id="@+id/spinner_categoria_movimentacao">
 
     </Spinner>
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_tipo"
+        android:id="@+id/spinner_tipo_movimentacao">
+
+    </Spinner>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_tipo_contas"
         android:layout_marginTop="12dp">
 
     </Spinner>
@@ -49,7 +56,7 @@
         android:id="@+id/text_Entrada_descricao_gasto"/>
 
     <Button
-        android:id="@+id/salvar"
+        android:id="@+id/salvar_movimentacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salvar" />

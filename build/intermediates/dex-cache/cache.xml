@@ -12,69 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/ilzimara/.android/build-cache/94433312eca1be579751c70a9734e458c8e12d3f/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d8b3df10ce87c51d59359d43fec902d47ede5ba7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilzimara/.android/build-cache/0a3b303fa15883ad5a6e901808dbdab76a9029de/output/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_ad6ed48a1e08e9b3ecd6a16c997ec9c12e74f92a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilzimara/.android/build-cache/50da07664f990795eeff2330a237d20018356dcf/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b5c5d55c979ebd7cf063ace4c2d954f41b6238a6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilzimara/.android/build-cache/f2ac50f259055ab1d1da1ffd935a3cec6606202c/output/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_054ba6a5a8d05924d22065651402c5fa29b9c72b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilzimara/.android/build-cache/a18df4b9656adb27904665ec543a391e3f26c4ca/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f7e79fe69e56232e10fc68c9dc440039f7fc8d61/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilzimara/.android/build-cache/0c04e8ac6e69bea207567b1d27837691cd38b415/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
-        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_56f73fe18f826f33a9355fc2ca8607433c9e2a13/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilzimara/.android/build-cache/04bfe3f1a76525123d1d790c4f47f6583f3272c1/output/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_665925610b125980af484ca5a3ee49f384ce7ee0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/ilzimara/.android/build-cache/8881179bf976c7e799bb41bafc64ddcdf09b8a9f/output/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
@@ -99,6 +36,15 @@
         revision="25.0.1"
         sha1="f45a03c30760a65208cf8a555e65ea97d38e8067">
         <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f35fec96ea6400703f6457d5a8968af62b3d0fa5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ilzimara/.android/build-cache/94433312eca1be579751c70a9734e458c8e12d3f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d8b3df10ce87c51d59359d43fec902d47ede5ba7/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -147,6 +93,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/ilzimara/.android/build-cache/0a3b303fa15883ad5a6e901808dbdab76a9029de/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_ad6ed48a1e08e9b3ecd6a16c997ec9c12e74f92a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/ilzimara/.android/build-cache/efabc3e3895ff3c08db918500e2bb332c279ecbe/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -165,12 +120,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/ilzimara/.android/build-cache/50da07664f990795eeff2330a237d20018356dcf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b5c5d55c979ebd7cf063ace4c2d954f41b6238a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/ilzimara/.android/build-cache/15d7c75104b32ebb8dab52ad468da57c3b478b6b/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
         <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9cda8b2a68d4086801b7181b30057ccb33470e0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ilzimara/.android/build-cache/f2ac50f259055ab1d1da1ffd935a3cec6606202c/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_054ba6a5a8d05924d22065651402c5fa29b9c72b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ilzimara/.android/build-cache/a18df4b9656adb27904665ec543a391e3f26c4ca/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f7e79fe69e56232e10fc68c9dc440039f7fc8d61/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ilzimara/.android/build-cache/0c04e8ac6e69bea207567b1d27837691cd38b415/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_56f73fe18f826f33a9355fc2ca8607433c9e2a13/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ilzimara/.android/build-cache/04bfe3f1a76525123d1d790c4f47f6583f3272c1/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/ilzimara/Documentos/APP/projeto/apsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_665925610b125980af484ca5a3ee49f384ce7ee0/classes.dex" />
     </item>
     <item
         is-multidex="true"

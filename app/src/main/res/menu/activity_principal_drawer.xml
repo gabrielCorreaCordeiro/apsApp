@@ -10,17 +10,18 @@
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_manage"
             android:title="Gerenciar Conta" />
+        <item
+            android:id="@+id/transferencia"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Transferência"/>
+
+        
 
 
     </group>
 
     <group android:checkableBehavior="single">
-    <item
-        android:id="@+id/transferencia"
-        android:icon="@drawable/ic_menu_send"
-        android:title="Transferência">
 
-    </item>
 
     <item
         android:id="@+id/deposito"

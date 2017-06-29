@@ -51,14 +51,14 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
         List<Contas> list = dao.findAll("descricao", "ASC");
         ArrayAdapter<Contas> adapter = new ArrayAdapter<Contas>(this, android.R.layout.simple_list_item_1, list);
 
-        mGastoSpinner = (Spinner) findViewById(R.id.spinner_tipo);
+        mGastoSpinner = (Spinner) findViewById(R.id.spinner_tipo_contas);
         mGastoSpinner.setAdapter(adapter);
     }
     private  void buildFormaDePagamento() {
         List<CategoriaMovimentacao> list = daoForma.findAll("descricao","ASC");
         ArrayAdapter<CategoriaMovimentacao> adapter = new ArrayAdapter<CategoriaMovimentacao>(this,android.R.layout.simple_list_item_1,list);
 
-        forma = (Spinner) findViewById(R.id.spinner_forma);
+        forma = (Spinner) findViewById(R.id.spinner_categoria_movimentacao);
         forma.setAdapter(adapter);
     }
 
@@ -71,7 +71,7 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void buildButton(){
-        salvar = (Button)  findViewById(R.id.salvar);
+        salvar = (Button)  findViewById(R.id.salvar_movimentacao);
         salvar.setOnClickListener(this);
 
     }
@@ -118,7 +118,8 @@ public class GastoActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if(getMovimentacaoConta() == null ) {
-            finishActivity(0);
+            finish();
+            return;
         }
         MovimentacaoContaDAO movimentacaoContaDAO = new MovimentacaoContaDAO(this);
         movimentacaoContaDAO.insert(getMovimentacaoConta());
