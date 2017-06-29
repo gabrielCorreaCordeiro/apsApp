@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.edu.utfpr.gabriel.financeiro.AdicionaBancoActivity"
+    tools:showIn="@layout/activity_adiciona_banco"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/adiciona_banco_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:hint="Nome do Banco"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <Button
+            android:id="@+id/adiciona_banco_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="124dp"
+            android:layout_marginStart="124dp"
+            android:text="Salvar" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
